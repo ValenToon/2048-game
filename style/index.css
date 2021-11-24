@@ -1,0 +1,31 @@
+@import "summary.css";
+@import "matrix.css";
+body {
+    font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+    background: #faf8ef;
+    position: static;
+}
+
+#buttonBlock {
+    margin: 30px auto 0 auto;
+    text-align: center;
+}
+
+#newGameBtn {
+    outline: none;
+    width: 200px;
+    height: 70px;
+    background: lightgray;
+    font-size: 18px;
+    color: white;
+    padding: 3px 10px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.5s ease;
+    border: none;
+}
+
+#newGameBtn:hover {
+    background-color: #ffc107;
+    font-size: 19px;
+}

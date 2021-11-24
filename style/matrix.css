@@ -1,0 +1,114 @@
+.table {
+    display: table;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.row {
+    display: table-row;
+    background: #e1d8cb;
+}
+
+.cell {
+    display: table-cell;
+    width: 120px;
+    height: 115px;
+    vertical-align: middle;
+    border: 12px solid #bbada0;
+    text-align: center;
+    color: #776e65;
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.appear-2 {
+    transition: opacity 2s ease-in;
+    background: #f9f7f3;
+    /*animation: appear 200ms ease 100ms;*/
+}
+
+.appear-4 {
+    background: #ede0c8;
+}
+
+.appear-8 {
+    color: #f9f6f2;
+    background: #f2b179;
+}
+
+.appear-16 {
+    color: #f9f6f2;
+    background: #f59563;
+}
+
+.appear-32 {
+    color: #f9f6f2;
+    background: #f67c5f;
+}
+
+.appear-64 {
+    color: #f9f6f2;
+    background: #f65e3b;
+}
+
+.appear-128 {
+    color: #f9f6f2;
+    background: #edcf72;
+    font-size: 60px;
+}
+
+.appear-256 {
+    color: #f9f6f2;
+    background: #edcc61;
+    font-size: 60px;
+}
+
+.appear-512 {
+    color: #f9f6f2;
+    background: #f65e3b;
+    font-size: 60px;
+}
+
+.appear-1024 {
+    color: #f9f6f2;
+    background: #f2b179;
+    font-size: 60px;
+}
+
+.appear-2048 {
+    color: #f9f6f2;
+    background: #f27e79;
+    font-size: 60px;
+}
+
+.addCell {
+    animation: pop 200ms ease 100ms;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+}
+
+@keyframes pop {
+    0% {
+        -webkit-transform: scale(0);
+        -moz-transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+}
